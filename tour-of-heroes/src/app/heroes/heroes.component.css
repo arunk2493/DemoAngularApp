@@ -29,7 +29,7 @@
   color: white;
 }
 .heroes .badge {
-  display: contents;
+  display: inline-block;
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
