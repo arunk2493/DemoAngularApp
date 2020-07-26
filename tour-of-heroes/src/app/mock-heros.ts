@@ -1,14 +1,13 @@
 import {Hero} from './heros';
 
+// @ts-ignore
 export const HEROES: Hero[] = [
-  { id: 11, name: 'MGR', image: 'audi' },
-  { id: 12, name: 'Sivaji', image: 'audi'  },
-  { id: 13, name: 'Rajini', image: 'audi'  },
-  { id: 14, name: 'Kamal', image: 'audi'  },
-  { id: 15, name: 'Thalapathy', image: 'audi'  },
-  { id: 16, name: 'Thala' , image: 'audi' },
-  { id: 17, name: 'Suriya', image: 'audi'  },
-  { id: 18, name: 'Vikram', image: 'audi'  },
-  { id: 19, name: 'SK', image: 'audi'  },
-  { id: 20, name: 'VJS', image: 'audi'  }
+  { date_of_birth: '12-December-1950', name: 'Rajini', upcoming_movie: 'Annathey', image: 'rajinikanth'  },
+  { date_of_birth: '7-November-1954', name: 'Kamal', upcoming_movie: 'Indian 2' , image: 'kamal'  },
+  { date_of_birth: '1-May-1971', name: 'Ajith', upcoming_movie: 'Valimai' , image: 'ajith'  },
+  { date_of_birth: '22-June-1974', name: 'Vijay' , upcoming_movie: 'Master' , image: 'vijay' }
+  /*{ date_of_birth: '12-December-1950', name: 'Rajini', upcoming_movie: 'Annathey' },
+  { date_of_birth: '7-November-1954', name: 'Kamal', upcoming_movie: 'Indian 2'  },
+  { date_of_birth: '1-May-1971', name: 'Thala', upcoming_movie: 'Valimai'  },
+  { date_of_birth: '22-June-1974', name: 'Thalapathy' , upcoming_movie: 'Master' }*/
 ];

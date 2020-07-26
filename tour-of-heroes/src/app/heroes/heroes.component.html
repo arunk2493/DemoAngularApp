@@ -1,25 +1,29 @@
 <h2>My Heroes</h2>
+<div class="row">
+  <div class="column">
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
       [class.selected]="hero === selectedHero"
       (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-    <img src="assets/images/{{hero.image}}.png" style="display:inline-flex;margin:6px 0 0 6px" width="28" align="right">
-
+    <span class="badge">{{hero.date_of_birth}}</span> {{hero.name}}<!--<img src="assets/images/{{hero.image}}.jpg" style="display: inline;margin:5px 0 0 5px" width="18">-->
   </li>
 </ul>
-
-<div *ngIf="selectedHero">
-
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name"/>
-    </label>
-    <div>
-      <img src="assets/images/{{selectedHero.image}}.png" style="display:inline-block;margin:5px 0 0 5px" width="48">
-    </div>
   </div>
 
+<div *ngIf="selectedHero">
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div><span>Date of Birth: </span>{{selectedHero.date_of_birth}}</div>
+  <div>
+    <div><span>Name:</span>
+      <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+    </div>
+    <div><span>Upcoming Movie:</span>
+      <input [(ngModel)]="selectedHero.upcoming_movie" placeholder="name"/>
+    </div>
+    <div>
+      <img src="assets/images/{{selectedHero.image}}.jpg" style="display:inline-block;margin:5px 0 0 5px" width="70px">
+    </div>
+  </div>
+</div>
 </div>

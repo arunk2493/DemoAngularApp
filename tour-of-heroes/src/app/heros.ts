@@ -1,5 +1,7 @@
 export interface Hero {
-  id: number;
+  date_of_birth: string;
   name: string;
+  upcoming_movie: string;
   image: any;
+
 }
